@@ -25,6 +25,6 @@ void pop(stack_t **stack, unsigned int line_cnt)
 	free(*stack);
 	*stack = tmp;
 	if (!*stack)
-		return; /* prevents errors 'cause next line might assign a NULL */
+		return; /* prevents errors cause next line might assign a NULL */
 	(*stack)->prev = NULL;
 }
